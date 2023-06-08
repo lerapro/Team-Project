@@ -468,15 +468,19 @@ main {
 
   .numbers {
     .number {
-      @include numbers-design;
+      @include numbers-design(700, 180px, 217px);
       position: absolute;
       left: 23px;
 
       &:nth-child(1) {
-        top: 67px;
+        top: 85px;
+        left: 10px;
         color: #1e0202;
 
         font-family: "Trebuchet MS";
+        font-weight: 700;
+        font-style: 182px;
+        line-height: 211px;
 
         text-shadow: -2px 2px 0 rgba(145, 7, 7, 0.38),
           2px 2px 0 rgba(145, 7, 7, 0.38), 2px -2px 0 rgba(145, 7, 7, 0.38),
@@ -484,7 +488,7 @@ main {
       }
 
       &:nth-child(2) {
-        top: 322px;
+        top: 340px;
         color: #f0c9c9;
 
         text-shadow: -3px 3px 0 rgba(172, 137, 137, 0.34),
