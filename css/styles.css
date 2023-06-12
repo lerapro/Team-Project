@@ -559,39 +559,35 @@ main .icon {
   display: none;
 }
 
-.modal-bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-}
-.modal-bg.on .modal-Contact-me {
+.modal-Contact-me.on {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  z-index: 2;
   height: 758px;
   background: linear-gradient(rgba(124, 0, 0, 0.52), rgba(124, 0, 0, 0.52)), url(../img/bg-modal-mobile.png);
   background-size: cover;
 }
-.modal-bg.on .modal-Contact-me h1 {
+.modal-Contact-me.on h1 {
   font-family: "Syncopate";
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
   line-height: 35px;
 }
-.modal-bg.on .modal-Contact-me h1:nth-child(1) {
+.modal-Contact-me.on h1:nth-child(1) {
   position: absolute;
   top: 65px;
   left: 25px;
   color: white;
 }
-.modal-bg.on .modal-Contact-me h1:nth-child(2) {
+.modal-Contact-me.on h1:nth-child(2) {
   color: #960000;
   padding-top: 65px;
   padding-left: 30px;
   margin-bottom: 53px;
 }
-.modal-bg.on .modal-Contact-me .input-modal {
+.modal-Contact-me.on .input-modal {
   box-sizing: border-box;
   width: 306px;
   height: 48px;
@@ -602,7 +598,7 @@ main .icon {
   justify-content: center;
   align-items: center;
 }
-.modal-bg.on .modal-Contact-me .input-modal input {
+.modal-Contact-me.on .input-modal input {
   box-sizing: border-box;
   width: 302px;
   height: 40px;
@@ -611,10 +607,15 @@ main .icon {
   border: 4px solid rgba(238, 5, 5, 0.13);
   border-radius: 15px;
 }
-.modal-bg.on .modal-Contact-me .input-modal input::placeholder {
+.modal-Contact-me.on .input-modal input::placeholder {
   color: #ff0000;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
-.modal-bg.on .modal-Contact-me button {
+.modal-Contact-me.on button {
   background: #d80808;
   color: white;
   font-family: "Roboto";
@@ -628,7 +629,54 @@ main .icon {
   width: 194px;
   margin: 96px auto 0px;
 }
-.modal-bg.off {
+.modal-Contact-me.off {
+  display: none;
+}
+
+.modal-Thanks.on {
+  background-color: rgba(115, 5, 5, 0.81);
+  height: 758px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  display: block;
+}
+.modal-Thanks.on h1 {
+  font-family: "Syncopate";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 119.6%;
+  width: 312px;
+  padding-top: 206px;
+  text-align: center;
+}
+.modal-Thanks.on h1:nth-child(1) {
+  position: absolute;
+  left: 25px;
+  color: white;
+}
+.modal-Thanks.on h1:nth-child(2) {
+  color: rgba(255, 4, 4, 0.74);
+  padding-left: 28px;
+  margin-bottom: 160px;
+}
+.modal-Thanks.on button {
+  box-sizing: content-box;
+  background: #d80808;
+  border-radius: 27px;
+  border: none;
+  width: 194px;
+  height: 54px;
+  margin-left: 82px;
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+}
+.modal-Thanks.off {
   display: none;
 }
 
@@ -990,49 +1038,47 @@ main .icon {
     width: 237px;
     height: 235px;
   }
-  .modal-bg {
-    height: 1176px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  .modal-bg.on .modal-Contact-me {
-    position: relative;
+  .modal-Contact-me.on {
+    position: absolute;
     background: linear-gradient(rgba(129, 1, 1, 0.52), rgba(129, 1, 1, 0.52)), url(../img/bg-modal-desktop.png);
     width: 1046px;
     height: 681px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
     border-radius: 24px;
     border: 20px solid rgba(194, 0, 0, 0.52);
   }
-  .modal-bg.on .modal-Contact-me h1 {
+  .modal-Contact-me.on h1 {
     font-family: "Syncopate";
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
     line-height: 36px;
   }
-  .modal-bg.on .modal-Contact-me h1:nth-child(1) {
+  .modal-Contact-me.on h1:nth-child(1) {
     top: 50px;
     left: 47px;
   }
-  .modal-bg.on .modal-Contact-me h1:nth-child(2) {
+  .modal-Contact-me.on h1:nth-child(2) {
     color: rgba(45, 1, 1, 0.74);
     padding-top: 51px;
     padding-left: 53px;
     margin-bottom: 77px;
   }
-  .modal-bg.on .modal-Contact-me .input-modal {
+  .modal-Contact-me.on .input-modal {
     width: 945px;
     height: 83px;
     margin: 34px auto 0;
   }
-  .modal-bg.on .modal-Contact-me .input-modal input {
+  .modal-Contact-me.on .input-modal input {
     width: 934px;
     height: 63px;
     padding-left: 20px;
   }
-  .modal-bg.on .modal-Contact-me button {
+  .modal-Contact-me.on button {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
@@ -1042,7 +1088,41 @@ main .icon {
     height: 56px;
     margin: 57px auto 0px;
   }
-  .modal-bg.off {
+  .modal-Contact-me.off {
+    display: none;
+  }
+  .modal-Thanks.on {
+    width: 1046px;
+    height: 681px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    border-radius: 24px;
+    border: 20px solid rgba(194, 0, 0, 0.52);
+  }
+  .modal-Thanks.on h1 {
+    font-family: "Syncopate";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 36px;
+    width: 900px;
+  }
+  .modal-Thanks.on h1:nth-child(1) {
+    left: 72px;
+    color: white;
+  }
+  .modal-Thanks.on h1:nth-child(2) {
+    color: rgba(255, 4, 4, 0.74);
+    padding-left: 75px;
+    margin-bottom: 160px;
+  }
+  .modal-Thanks.on button {
+    margin-left: 420px;
+  }
+  .modal-Thanks.off {
     display: none;
   }
 }

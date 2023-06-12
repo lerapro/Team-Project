@@ -443,69 +443,104 @@
     }
   }
 
-  .modal-bg {
-    height: 1176px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgba(0, 0, 0, 0.7);
-
+  .modal-Contact-me {
     &.on {
-      .modal-Contact-me {
-        position: relative;
-        background: linear-gradient(
-            rgba(129, 1, 1, 0.52),
-            rgba(129, 1, 1, 0.52)
-          ),
-          url(../img/bg-modal-desktop.png);
+      position: absolute;
+      background: linear-gradient(rgba(129, 1, 1, 0.52), rgba(129, 1, 1, 0.52)),
+        url(../img/bg-modal-desktop.png);
 
-        width: 1046px;
-        height: 681px;
+      width: 1046px;
+      height: 681px;
 
-        border-radius: 24px;
-        border: 20px solid rgba(194, 0, 0, 0.52);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto auto;
 
-        h1 {
-          @include text-design(700, 35px, 36px);
+      border-radius: 24px;
+      border: 20px solid rgba(194, 0, 0, 0.52);
 
-          &:nth-child(1) {
-            top: 50px;
-            left: 47px;
-          }
+      h1 {
+        @include text-design(700, 35px, 36px);
 
-          &:nth-child(2) {
-            color: rgba(45, 1, 1, 0.74);
-            padding-top: 51px;
-            padding-left: 53px;
-
-            margin-bottom: 77px;
-          }
+        &:nth-child(1) {
+          top: 50px;
+          left: 47px;
         }
 
-        .input-modal {
-          width: 945px;
-          height: 83px;
+        &:nth-child(2) {
+          color: rgba(45, 1, 1, 0.74);
+          padding-top: 51px;
+          padding-left: 53px;
 
-          margin: 34px auto 0;
+          margin-bottom: 77px;
+        }
+      }
 
-          input {
-            width: 934px;
-            height: 63px;
+      .input-modal {
+        width: 945px;
+        height: 83px;
 
-            padding-left: 20px;
-          }
+        margin: 34px auto 0;
+
+        input {
+          width: 934px;
+          height: 63px;
+
+          padding-left: 20px;
+        }
+      }
+
+      button {
+        @include text-style(900, 20px, 23px);
+
+        width: 172px;
+        height: 56px;
+
+        margin: 57px auto 0px;
+      }
+    }
+
+    &.off {
+      display: none;
+    }
+  }
+
+  .modal-Thanks {
+    &.on {
+      width: 1046px;
+      height: 681px;
+
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto auto;
+
+      border-radius: 24px;
+      border: 20px solid rgba(194, 0, 0, 0.52);
+
+      h1 {
+        @include text-design(700, 35px, 36px);
+        width: 900px;
+
+        &:nth-child(1) {
+          left: 72px;
+
+          color: white;
         }
 
-        button {
-          @include text-style(900, 20px, 23px);
+        &:nth-child(2) {
+          color: rgba(255, 4, 4, 0.74);
+          padding-left: 75px;
 
-          width: 172px;
-          height: 56px;
-
-          margin: 57px auto 0px;
+          margin-bottom: 160px;
         }
+      }
+
+      button {
+        margin-left: 420px;
       }
     }
 
