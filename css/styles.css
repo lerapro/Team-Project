@@ -171,7 +171,7 @@ header nav input[type=checkbox]:checked ~ label span::after {
 }
 header nav label {
   display: block;
-  position: fixed;
+  position: absolute;
   cursor: pointer;
   z-index: 1;
 }
@@ -359,11 +359,11 @@ header .hero h1.graphic.white {
 }
 header .hero h1.graphic.dark-red {
   color: rgba(93, 15, 15, 0.41);
-  left: 68px;
+  left: 64px;
 }
 header .hero h1.graphic.red {
   color: #fc0707;
-  left: 75px;
+  left: 67px;
 }
 header .hero h1.design {
   top: 255px;
@@ -373,11 +373,11 @@ header .hero h1.design.white {
 }
 header .hero h1.design.dark-red {
   color: rgba(93, 15, 15, 0.41);
-  left: 68px;
+  left: 64px;
 }
 header .hero h1.design.red {
   color: #fc0707;
-  left: 75px;
+  left: 67px;
 }
 header .hero .hero-quality {
   font-family: "Roboto";
@@ -416,6 +416,9 @@ header .hero .contact-btn-mobile {
   position: absolute;
   top: 310px;
   left: 65px;
+}
+header .hero .contact-btn-mobile:visited ~ .modal-Contact-me {
+  display: block;
 }
 
 main {
@@ -553,6 +556,80 @@ main .numbers .number:nth-child(3) {
   text-shadow: -3px 3px 0 rgba(81, 3, 3, 0.44), 3px 3px 0 rgba(81, 3, 3, 0.44), 3px -3px 0 rgba(81, 3, 3, 0.44), -3px -3px 0 rgba(81, 3, 3, 0.44);
 }
 main .icon {
+  display: none;
+}
+
+.modal-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.modal-bg.on .modal-Contact-me {
+  display: flex;
+  flex-direction: column;
+  height: 758px;
+  background: linear-gradient(rgba(124, 0, 0, 0.52), rgba(124, 0, 0, 0.52)), url(../img/bg-modal-mobile.png);
+  background-size: cover;
+}
+.modal-bg.on .modal-Contact-me h1 {
+  font-family: "Syncopate";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 35px;
+}
+.modal-bg.on .modal-Contact-me h1:nth-child(1) {
+  position: absolute;
+  top: 65px;
+  left: 25px;
+  color: white;
+}
+.modal-bg.on .modal-Contact-me h1:nth-child(2) {
+  color: #960000;
+  padding-top: 65px;
+  padding-left: 30px;
+  margin-bottom: 53px;
+}
+.modal-bg.on .modal-Contact-me .input-modal {
+  box-sizing: border-box;
+  width: 306px;
+  height: 48px;
+  margin: 37px auto 0;
+  border: 4px solid rgba(238, 5, 5, 0.25);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-bg.on .modal-Contact-me .input-modal input {
+  box-sizing: border-box;
+  width: 302px;
+  height: 40px;
+  padding-left: 15px;
+  background: rgba(0, 0, 0, 0.48);
+  border: 4px solid rgba(238, 5, 5, 0.13);
+  border-radius: 15px;
+}
+.modal-bg.on .modal-Contact-me .input-modal input::placeholder {
+  color: #ff0000;
+}
+.modal-bg.on .modal-Contact-me button {
+  background: #d80808;
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 27px;
+  border: none;
+  height: 54px;
+  width: 194px;
+  margin: 96px auto 0px;
+}
+.modal-bg.off {
   display: none;
 }
 
@@ -913,5 +990,60 @@ main .icon {
     background: #f0c9c9;
     width: 237px;
     height: 235px;
+  }
+  .modal-bg {
+    height: 1176px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .modal-bg.on .modal-Contact-me {
+    position: relative;
+    background: linear-gradient(rgba(129, 1, 1, 0.52), rgba(129, 1, 1, 0.52)), url(../img/bg-modal-desktop.png);
+    width: 1046px;
+    height: 681px;
+    border-radius: 24px;
+    border: 20px solid rgba(194, 0, 0, 0.52);
+  }
+  .modal-bg.on .modal-Contact-me h1 {
+    font-family: "Syncopate";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 36px;
+  }
+  .modal-bg.on .modal-Contact-me h1:nth-child(1) {
+    top: 50px;
+    left: 47px;
+  }
+  .modal-bg.on .modal-Contact-me h1:nth-child(2) {
+    color: rgba(45, 1, 1, 0.74);
+    padding-top: 51px;
+    padding-left: 53px;
+    margin-bottom: 77px;
+  }
+  .modal-bg.on .modal-Contact-me .input-modal {
+    width: 945px;
+    height: 83px;
+    margin: 34px auto 0;
+  }
+  .modal-bg.on .modal-Contact-me .input-modal input {
+    width: 934px;
+    height: 63px;
+    padding-left: 20px;
+  }
+  .modal-bg.on .modal-Contact-me button {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    width: 172px;
+    height: 56px;
+    margin: 57px auto 0px;
+  }
+  .modal-bg.off {
+    display: none;
   }
 }
