@@ -359,8 +359,10 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 
   height: 822px;
+  width: 100vw;
 
   h2 {
     @include text-design(700, 32px, 33px);

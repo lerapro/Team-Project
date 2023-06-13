@@ -426,7 +426,9 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
   height: 822px;
+  width: 100vw;
 }
 main h2 {
   font-family: "Syncopate";
