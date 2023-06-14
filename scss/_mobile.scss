@@ -182,136 +182,21 @@ header {
   }
 
   .hero {
-    position: relative;
     overflow: hidden;
 
-    height: 640px;
+    height: 648px;
     width: 100vw;
 
-    img {
+    .img-hero {
       position: absolute;
-    }
 
-    .ulyana {
-      left: 155px;
-      top: 105px;
-
-      width: 339px;
-      height: 429px;
-
-      transform: matrix(1, -0.03, 0.02, 1, 0, 0);
-    }
-
-    &.desktop {
-      display: none;
-    }
-
-    .ellipse-small {
       &.mobile {
-        left: 162px;
-        top: 131px;
-
-        width: 420px;
-        height: 437px;
+        left: 11%;
+        top: 16%;
       }
 
       &.desktop {
         display: none;
-      }
-    }
-
-    .ellipse-big {
-      &.mobile {
-        width: 480px;
-        height: 497px;
-
-        left: 130px;
-        top: 105px;
-      }
-      &.desktop {
-        display: none;
-      }
-    }
-
-    .ellipse-red {
-      height: 35px;
-      width: 34px;
-
-      border: none;
-      border-radius: 50%;
-
-      background: radial-gradient(
-        50% 50% at 50% 50%,
-        rgba(177, 4, 4, 0.541) 0%,
-        #ff0000 73.96%
-      );
-      box-shadow: 0px 0px 8px 17px rgba(0, 0, 0, 0.22);
-
-      position: absolute;
-      top: 450px;
-      left: 169px;
-    }
-
-    .ellipse-gray {
-      width: 25.13px;
-      height: 24px;
-
-      border: none;
-      border-radius: 50%;
-
-      background: radial-gradient(
-        50% 50% at 50% 50%,
-        #613737 49.48%,
-        #a67373 100%
-      );
-      box-shadow: 0px 0px 7px 14px rgba(0, 0, 0, 0.2);
-
-      position: absolute;
-      top: 534px;
-      left: 250px;
-    }
-
-    h1 {
-      color: white;
-
-      position: absolute;
-
-      @include text-design(700, 33px, 100%);
-
-      &.graphic {
-        top: 190px;
-
-        &.white {
-          left: 61px;
-        }
-
-        &.dark-red {
-          color: rgba(93, 15, 15, 0.41);
-          left: 64px;
-        }
-
-        &.red {
-          color: #fc0707;
-          left: 67px;
-        }
-      }
-
-      &.design {
-        top: 255px;
-
-        &.white {
-          left: 61px;
-        }
-
-        &.dark-red {
-          color: rgba(93, 15, 15, 0.41);
-          left: 64px;
-        }
-
-        &.red {
-          color: #fc0707;
-          left: 67px;
-        }
       }
     }
 
@@ -319,8 +204,8 @@ header {
       @include text-style(70, 12px, 26px);
       color: #bb9292;
       position: absolute;
-      top: 581px;
-      left: 212px;
+      top: 86%;
+      left: 57.5%;
     }
 
     .hero-design {
@@ -329,8 +214,8 @@ header {
       width: 140px;
 
       position: absolute;
-      top: 490px;
-      left: 56px;
+      top: 78%;
+      left: 10.5%;
     }
 
     .contact-btn-mobile {
@@ -338,14 +223,19 @@ header {
       border-radius: 27px;
       border: none;
 
-      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 133px;
+      height: 43px;
 
       @include text-style(900, 14px, 16px);
       color: white;
 
       position: absolute;
-      top: 310px;
-      left: 65px;
+      top: 47%;
+      left: 10.5%;
 
       &:visited ~ .modal-Contact-me {
         display: block;

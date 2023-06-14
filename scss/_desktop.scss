@@ -89,23 +89,7 @@
     .hero {
       height: 1090px;
 
-      .ulyana {
-        &.desktop {
-          display: block;
-
-          width: auto;
-          height: auto;
-
-          left: 451px;
-          top: 0;
-        }
-
-        &.mobile {
-          display: none;
-        }
-      }
-
-      .ellipse-small {
+      .img-hero {
         &.mobile {
           display: none;
         }
@@ -113,99 +97,28 @@
         &.desktop {
           display: block;
 
-          left: 428px;
-          top: 125px;
+          top: 8%;
 
-          width: auto;
-          height: auto;
-        }
-      }
+          left: 0;
+          right: 0;
 
-      .ellipse-big {
-        &.mobile {
-          display: none;
-        }
-
-        &.desktop {
-          display: block;
-
-          left: 369px;
-          top: 56px;
-
-          width: auto;
-          height: auto;
-        }
-      }
-
-      .ellipse-red {
-        width: 75px;
-        height: 78px;
-
-        left: 425px;
-        top: 694px;
-      }
-
-      .ellipse-gray {
-        width: 62px;
-        height: 60px;
-
-        left: 1089px;
-        top: 215px;
-      }
-
-      h1 {
-        @include text-design(700, 96px, 100%);
-
-        &.graphic {
-          top: 190px;
-
-          &.white {
-            left: 133px;
-          }
-
-          &.dark-red {
-            color: rgba(93, 15, 15, 0.41);
-            left: 140px;
-          }
-
-          &.red {
-            color: #fc0707;
-            left: 147px;
-          }
-        }
-
-        &.design {
-          top: 657px;
-
-          &.white {
-            left: 930px;
-          }
-
-          &.dark-red {
-            color: rgba(93, 15, 15, 0.41);
-            left: 937px;
-          }
-
-          &.red {
-            color: #fc0707;
-            left: 944px;
-          }
+          margin: 0 auto;
         }
       }
 
       .hero-quality {
         @include text-style(700, 18px, 26px);
 
-        top: 206px;
-        left: 1173px;
+        top: 26%;
+        left: 76%;
       }
 
       .hero-design {
         @include text-style(700, 18px, 26px);
         width: 303px;
 
-        top: 778px;
-        left: 197px;
+        top: 79%;
+        left: 7%;
       }
 
       .contact-btn-mobile {

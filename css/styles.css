@@ -284,100 +284,19 @@ header nav .navigation .contact-btn {
   display: none;
 }
 header .hero {
-  position: relative;
   overflow: hidden;
-  height: 640px;
+  height: 648px;
   width: 100vw;
 }
-header .hero img {
+header .hero .img-hero {
   position: absolute;
 }
-header .hero .ulyana {
-  left: 155px;
-  top: 105px;
-  width: 339px;
-  height: 429px;
-  transform: matrix(1, -0.03, 0.02, 1, 0, 0);
+header .hero .img-hero.mobile {
+  left: 11%;
+  top: 16%;
 }
-header .hero.desktop {
+header .hero .img-hero.desktop {
   display: none;
-}
-header .hero .ellipse-small.mobile {
-  left: 162px;
-  top: 131px;
-  width: 420px;
-  height: 437px;
-}
-header .hero .ellipse-small.desktop {
-  display: none;
-}
-header .hero .ellipse-big.mobile {
-  width: 480px;
-  height: 497px;
-  left: 130px;
-  top: 105px;
-}
-header .hero .ellipse-big.desktop {
-  display: none;
-}
-header .hero .ellipse-red {
-  height: 35px;
-  width: 34px;
-  border: none;
-  border-radius: 50%;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(177, 4, 4, 0.541) 0%, #ff0000 73.96%);
-  box-shadow: 0px 0px 8px 17px rgba(0, 0, 0, 0.22);
-  position: absolute;
-  top: 450px;
-  left: 169px;
-}
-header .hero .ellipse-gray {
-  width: 25.13px;
-  height: 24px;
-  border: none;
-  border-radius: 50%;
-  background: radial-gradient(50% 50% at 50% 50%, #613737 49.48%, #a67373 100%);
-  box-shadow: 0px 0px 7px 14px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 534px;
-  left: 250px;
-}
-header .hero h1 {
-  color: white;
-  position: absolute;
-  font-family: "Syncopate";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 33px;
-  line-height: 100%;
-}
-header .hero h1.graphic {
-  top: 190px;
-}
-header .hero h1.graphic.white {
-  left: 61px;
-}
-header .hero h1.graphic.dark-red {
-  color: rgba(93, 15, 15, 0.41);
-  left: 64px;
-}
-header .hero h1.graphic.red {
-  color: #fc0707;
-  left: 67px;
-}
-header .hero h1.design {
-  top: 255px;
-}
-header .hero h1.design.white {
-  left: 61px;
-}
-header .hero h1.design.dark-red {
-  color: rgba(93, 15, 15, 0.41);
-  left: 64px;
-}
-header .hero h1.design.red {
-  color: #fc0707;
-  left: 67px;
 }
 header .hero .hero-quality {
   font-family: "Roboto";
@@ -387,8 +306,8 @@ header .hero .hero-quality {
   line-height: 26px;
   color: #bb9292;
   position: absolute;
-  top: 581px;
-  left: 212px;
+  top: 86%;
+  left: 57.5%;
 }
 header .hero .hero-design {
   font-family: "Roboto";
@@ -399,14 +318,18 @@ header .hero .hero-design {
   color: #ff0000;
   width: 140px;
   position: absolute;
-  top: 490px;
-  left: 56px;
+  top: 78%;
+  left: 10.5%;
 }
 header .hero .contact-btn-mobile {
   background: #d80808;
   border-radius: 27px;
   border: none;
-  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 133px;
+  height: 43px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -414,8 +337,8 @@ header .hero .contact-btn-mobile {
   line-height: 16px;
   color: white;
   position: absolute;
-  top: 310px;
-  left: 65px;
+  top: 47%;
+  left: 10.5%;
 }
 header .hero .contact-btn-mobile:visited ~ .modal-Contact-me {
   display: block;
@@ -756,82 +679,15 @@ main .icon {
   header .hero {
     height: 1090px;
   }
-  header .hero .ulyana.desktop {
-    display: block;
-    width: auto;
-    height: auto;
-    left: 451px;
-    top: 0;
-  }
-  header .hero .ulyana.mobile {
+  header .hero .img-hero.mobile {
     display: none;
   }
-  header .hero .ellipse-small.mobile {
-    display: none;
-  }
-  header .hero .ellipse-small.desktop {
+  header .hero .img-hero.desktop {
     display: block;
-    left: 428px;
-    top: 125px;
-    width: auto;
-    height: auto;
-  }
-  header .hero .ellipse-big.mobile {
-    display: none;
-  }
-  header .hero .ellipse-big.desktop {
-    display: block;
-    left: 369px;
-    top: 56px;
-    width: auto;
-    height: auto;
-  }
-  header .hero .ellipse-red {
-    width: 75px;
-    height: 78px;
-    left: 425px;
-    top: 694px;
-  }
-  header .hero .ellipse-gray {
-    width: 62px;
-    height: 60px;
-    left: 1089px;
-    top: 215px;
-  }
-  header .hero h1 {
-    font-family: "Syncopate";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 100%;
-  }
-  header .hero h1.graphic {
-    top: 190px;
-  }
-  header .hero h1.graphic.white {
-    left: 133px;
-  }
-  header .hero h1.graphic.dark-red {
-    color: rgba(93, 15, 15, 0.41);
-    left: 140px;
-  }
-  header .hero h1.graphic.red {
-    color: #fc0707;
-    left: 147px;
-  }
-  header .hero h1.design {
-    top: 657px;
-  }
-  header .hero h1.design.white {
-    left: 930px;
-  }
-  header .hero h1.design.dark-red {
-    color: rgba(93, 15, 15, 0.41);
-    left: 937px;
-  }
-  header .hero h1.design.red {
-    color: #fc0707;
-    left: 944px;
+    top: 8%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   header .hero .hero-quality {
     font-family: "Roboto";
@@ -839,8 +695,8 @@ main .icon {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    top: 206px;
-    left: 1173px;
+    top: 26%;
+    left: 76%;
   }
   header .hero .hero-design {
     font-family: "Roboto";
@@ -849,8 +705,8 @@ main .icon {
     font-size: 18px;
     line-height: 26px;
     width: 303px;
-    top: 778px;
-    left: 197px;
+    top: 79%;
+    left: 7%;
   }
   header .hero .contact-btn-mobile {
     display: none;
