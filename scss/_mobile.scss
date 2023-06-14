@@ -1,9 +1,10 @@
 header {
-  background-image: url(../img/background.png);
+  background-image: url(../img/black-bg-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
 
   position: relative;
+  overflow: hidden;
 
   nav {
     input[type="checkbox"] {
@@ -183,6 +184,7 @@ header {
 
   .hero {
     overflow: hidden;
+    position: relative;
 
     height: 648px;
     width: 100vw;
@@ -257,14 +259,14 @@ main {
   h2 {
     @include text-design(700, 32px, 33px);
     position: absolute;
-    top: 20px;
+    top: 3.5%;
 
     &.black {
-      left: 100px;
+      left: 23.6%;
     }
 
     &.pink {
-      left: 93px;
+      left: 22%;
       color: #f4bdbd;
     }
   }
@@ -276,7 +278,8 @@ main {
 
     &.mobile {
       position: absolute;
-      top: 40px;
+      top: 5.6%;
+      left: -2%;
     }
   }
 
@@ -287,7 +290,7 @@ main {
 
     &.mobile {
       position: absolute;
-      top: 234px;
+      top: 29%;
     }
   }
 
@@ -298,111 +301,111 @@ main {
 
     &.mobile {
       position: absolute;
-      top: 393px;
-      left: 27px;
+      top: 49%;
+      left: 8%;
     }
   }
 
-  ul {
-    li {
-      &:nth-child(1) {
-        position: absolute;
-        top: 137px;
-        left: 110px;
+  // ul {
+  //   li {
+  //     &:nth-child(1) {
+  //       position: absolute;
+  //       top: 137px;
+  //       left: 110px;
 
-        width: 180px;
+  //       width: 180px;
 
-        @include text-style(700, 15px, 18px);
-      }
+  //       @include text-style(700, 15px, 18px);
+  //     }
 
-      &:nth-child(2) {
-        position: absolute;
-        top: 290px;
-        left: 110px;
+  //     &:nth-child(2) {
+  //       position: absolute;
+  //       top: 290px;
+  //       left: 110px;
 
-        width: 180px;
+  //       width: 180px;
 
-        color: white;
+  //       color: white;
 
-        h5 {
-          margin-bottom: 15px;
-          @include text-style(700, 15px, 18px);
-        }
+  //       h5 {
+  //         margin-bottom: 15px;
+  //         @include text-style(700, 15px, 18px);
+  //       }
 
-        p {
-          @include text-style(400, 12px, 14px);
-          width: 143px;
-        }
-      }
+  //       p {
+  //         @include text-style(400, 12px, 14px);
+  //         width: 143px;
+  //       }
+  //     }
 
-      &:nth-child(3) {
-        position: absolute;
-        top: 485px;
-        left: 135px;
+  //     &:nth-child(3) {
+  //       position: absolute;
+  //       top: 485px;
+  //       left: 135px;
 
-        width: 180px;
+  //       width: 180px;
 
-        color: black;
+  //       color: black;
 
-        h5 {
-          margin-top: 15px;
-          @include text-style(700, 12px, 14px);
-          width: 190px;
-        }
+  //       h5 {
+  //         margin-top: 15px;
+  //         @include text-style(700, 12px, 14px);
+  //         width: 190px;
+  //       }
 
-        p {
-          @include text-style(400, 9px, 12px);
-          width: 120px;
+  //       p {
+  //         @include text-style(400, 9px, 12px);
+  //         width: 120px;
 
-          text-align: end;
+  //         text-align: end;
 
-          margin-left: 58px;
-        }
-      }
-    }
-  }
+  //         margin-left: 58px;
+  //       }
+  //     }
+  //   }
+  // }
 
-  .numbers {
-    .number {
-      @include numbers-design(700, 180px, 217px);
-      position: absolute;
-      left: 23px;
+  // .numbers {
+  //   .number {
+  //     @include numbers-design(700, 180px, 217px);
+  //     position: absolute;
+  //     left: 23px;
 
-      &:nth-child(1) {
-        top: 85px;
-        left: 10px;
-        color: #1e0202;
+  //     &:nth-child(1) {
+  //       top: 85px;
+  //       left: 10px;
+  //       color: #1e0202;
 
-        font-family: "Trebuchet MS";
-        font-weight: 700;
-        font-style: 182px;
-        line-height: 211px;
+  //       font-family: "Trebuchet MS";
+  //       font-weight: 700;
+  //       font-style: 182px;
+  //       line-height: 211px;
 
-        text-shadow: -2px 2px 0 rgba(145, 7, 7, 0.38),
-          2px 2px 0 rgba(145, 7, 7, 0.38), 2px -2px 0 rgba(145, 7, 7, 0.38),
-          -2px -2px 0 rgba(145, 7, 7, 0.38);
-      }
+  //       text-shadow: -2px 2px 0 rgba(145, 7, 7, 0.38),
+  //         2px 2px 0 rgba(145, 7, 7, 0.38), 2px -2px 0 rgba(145, 7, 7, 0.38),
+  //         -2px -2px 0 rgba(145, 7, 7, 0.38);
+  //     }
 
-      &:nth-child(2) {
-        top: 340px;
-        color: #f0c9c9;
+  //     &:nth-child(2) {
+  //       top: 340px;
+  //       color: #f0c9c9;
 
-        text-shadow: -3px 3px 0 rgba(172, 137, 137, 0.34),
-          3px 3px 0 rgba(172, 137, 137, 0.34),
-          3px -3px 0 rgba(172, 137, 137, 0.34),
-          -3px -3px 0 rgba(172, 137, 137, 0.34);
-      }
+  //       text-shadow: -3px 3px 0 rgba(172, 137, 137, 0.34),
+  //         3px 3px 0 rgba(172, 137, 137, 0.34),
+  //         3px -3px 0 rgba(172, 137, 137, 0.34),
+  //         -3px -3px 0 rgba(172, 137, 137, 0.34);
+  //     }
 
-      &:nth-child(3) {
-        top: 500px;
-        color: #fb0909;
+  //     &:nth-child(3) {
+  //       top: 500px;
+  //       color: #fb0909;
 
-        text-shadow: -3px 3px 0 rgba(81, 3, 3, 0.44),
-          3px 3px 0 rgba(81, 3, 3, 0.44), 3px -3px 0 rgba(81, 3, 3, 0.44),
-          -3px -3px 0 rgba(81, 3, 3, 0.44);
-      }
-    }
-  }
+  //       text-shadow: -3px 3px 0 rgba(81, 3, 3, 0.44),
+  //         3px 3px 0 rgba(81, 3, 3, 0.44), 3px -3px 0 rgba(81, 3, 3, 0.44),
+  //         -3px -3px 0 rgba(81, 3, 3, 0.44);
+  //     }
+  //   }
+  // }
 
   .icon {
     display: none;
@@ -423,7 +426,7 @@ main {
       url(../img/bg-modal-mobile.png);
     background-size: cover;
 
-    h1 {
+    h2 {
       @include text-design(700, 34px, 35px);
 
       &:nth-child(1) {
@@ -505,7 +508,7 @@ main {
     z-index: 2;
     display: block;
 
-    h1 {
+    h2 {
       @include text-design(700, 30px, 119.6%);
       width: 312px;
       padding-top: 206px;
