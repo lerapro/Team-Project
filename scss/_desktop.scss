@@ -1,4 +1,12 @@
 @media (min-width: 992px) {
+  .container {
+    max-width: 1295px;
+    // width: 100vw;
+    height: fit-content;
+
+    margin: 0 auto;
+  }
+
   header {
     background-image: url(../img/black-bg-desktop.png);
 
@@ -104,6 +112,24 @@
         }
       }
 
+      .graphic,
+      .design {
+        display: block;
+
+        position: absolute;
+      }
+
+      .graphic {
+        top: 26%;
+        left: 6%;
+      }
+
+      .design {
+        top: 71%;
+        // left: 60%;
+        right: 4%;
+      }
+
       .hero-quality {
         @include text-style(700, 18px, 26px);
 
@@ -127,242 +153,242 @@
 
   main {
     background-image: url(../img/bg-red-desktop.png);
+    .my-task {
+      height: 945px;
 
-    height: 945px;
+      h2 {
+        @include text-design(700, 57px, 59px);
+        top: 3%;
 
-    h2 {
-      @include text-design(700, 57px, 59px);
-      top: 3%;
+        &.black {
+          left: 6%;
+        }
 
-      &.black {
-        left: 6%;
+        &.pink {
+          left: 5.28%;
+        }
       }
 
-      &.pink {
-        left: 5.28%;
-      }
-    }
-
-    .red-shape,
-    .dark-shape,
-    .light-shape {
-      position: absolute;
-    }
-
-    .red-shape {
-      &.desktop {
-        display: block;
-        left: 9%;
-        top: 9%;
+      .red-shape,
+      .dark-shape,
+      .light-shape {
+        position: absolute;
       }
 
-      &.mobile {
-        display: none;
-      }
-    }
+      .red-shape {
+        &.desktop {
+          display: block;
+          left: 9%;
+          top: 9%;
+        }
 
-    .dark-shape {
-      &.desktop {
-        display: block;
-
-        left: 17%;
-        top: 32%;
-      }
-
-      &.mobile {
-        display: none;
-      }
-    }
-
-    .light-shape {
-      &.desktop {
-        display: block;
-
-        left: 27%;
-        top: 50%;
+        &.mobile {
+          display: none;
+        }
       }
 
-      &.mobile {
-        display: none;
+      .dark-shape {
+        &.desktop {
+          display: block;
+
+          left: 17%;
+          top: 32%;
+        }
+
+        &.mobile {
+          display: none;
+        }
       }
-    }
 
-    .icon {
-      position: absolute;
+      .light-shape {
+        &.desktop {
+          display: block;
 
-      box-sizing: border-box;
-      border-radius: 50%;
+          left: 27%;
+          top: 50%;
+        }
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+        &.mobile {
+          display: none;
+        }
+      }
 
-      padding: 15px;
+      .icon {
+        position: absolute;
 
-      & div {
+        box-sizing: border-box;
         border-radius: 50%;
 
         display: flex;
         justify-content: center;
         align-items: center;
-      }
 
-      &:nth-of-type(1) {
-        width: 187px;
-        height: 185.07px;
+        padding: 15px;
 
-        box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.2);
-        background-color: rgba(52, 10, 10, 0.12);
+        & div {
+          border-radius: 50%;
 
-        top: 6%;
-        left: 43%;
-
-        div {
-          background: #e50000;
-          width: 151px;
-          height: 149.44px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
-      }
 
-      &:nth-of-type(2) {
-        width: 225px;
-        height: 223px;
+        &:nth-of-type(1) {
+          width: 187px;
+          height: 185.07px;
 
-        box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.23);
-        background-color: rgba(26, 2, 2, 0.08);
+          box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.2);
+          background-color: rgba(52, 10, 10, 0.12);
 
-        top: 30%;
-        left: 58%;
+          top: 6%;
+          left: 43%;
 
-        div {
-          background: #713232;
-          width: 192px;
-          height: 190px;
+          div {
+            background: #e50000;
+            width: 151px;
+            height: 149.44px;
+          }
         }
-      }
 
-      &:nth-of-type(3) {
-        width: 270px;
-        height: 267px;
+        &:nth-of-type(2) {
+          width: 225px;
+          height: 223px;
 
-        box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.2);
-        background-color: rgba(6, 0, 0, 0.01);
+          box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.23);
+          background-color: rgba(26, 2, 2, 0.08);
 
-        top: 56%;
-        left: 70%;
+          top: 30%;
+          left: 58%;
 
-        div {
-          background: #f0c9c9;
-          width: 237px;
-          height: 235px;
+          div {
+            background: #713232;
+            width: 192px;
+            height: 190px;
+          }
+        }
+
+        &:nth-of-type(3) {
+          width: 270px;
+          height: 267px;
+
+          box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.2);
+          background-color: rgba(6, 0, 0, 0.01);
+
+          top: 56%;
+          left: 70%;
+
+          div {
+            background: #f0c9c9;
+            width: 237px;
+            height: 235px;
+          }
         }
       }
     }
   }
 
   .modal-Contact-me {
-    &.on {
-      position: absolute;
-      background: linear-gradient(rgba(129, 1, 1, 0.52), rgba(129, 1, 1, 0.52)),
-        url(../img/bg-modal-desktop.png);
+    position: absolute;
+    background: linear-gradient(rgba(129, 1, 1, 0.52), rgba(129, 1, 1, 0.52)),
+      url(../img/bg-modal-desktop.png);
 
-      width: 1046px;
-      height: 681px;
+    width: 1046px;
+    height: 681px;
 
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
 
-      border-radius: 24px;
-      border: 20px solid rgba(194, 0, 0, 0.52);
+    border-radius: 24px;
+    border: 20px solid rgba(194, 0, 0, 0.52);
+    opacity: 0;
 
-      h2 {
-        @include text-design(700, 35px, 36px);
+    h2 {
+      @include text-design(700, 35px, 36px);
 
-        &:nth-child(1) {
-          top: 50px;
-          left: 47px;
-        }
-
-        &:nth-child(2) {
-          color: rgba(45, 1, 1, 0.74);
-          padding-top: 51px;
-          padding-left: 53px;
-
-          margin-bottom: 77px;
-        }
+      &:nth-child(1) {
+        top: 50px;
+        left: 47px;
       }
 
-      .input-modal {
-        width: 945px;
-        height: 83px;
+      &:nth-child(2) {
+        color: rgba(45, 1, 1, 0.74);
+        padding-top: 51px;
+        padding-left: 53px;
 
-        margin: 34px auto 0;
-
-        input {
-          width: 934px;
-          height: 63px;
-
-          padding-left: 20px;
-        }
-      }
-
-      button {
-        @include text-style(900, 20px, 23px);
-
-        width: 172px;
-        height: 56px;
-
-        margin: 57px auto 0px;
+        margin-bottom: 77px;
       }
     }
 
-    &.off {
-      display: none;
+    .input-modal {
+      width: 945px;
+      height: 83px;
+
+      margin: 34px auto 0;
+
+      input {
+        width: 934px;
+        height: 63px;
+
+        padding-left: 20px;
+      }
+    }
+
+    button {
+      @include text-style(900, 20px, 23px);
+
+      width: 172px;
+      height: 56px;
+
+      margin: 57px auto 0px;
+    }
+
+    &:target {
+      opacity: 1;
     }
   }
 
   .modal-Thanks {
-    &.on {
-      width: 1046px;
-      height: 681px;
+    width: 1046px;
+    height: 681px;
 
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto auto;
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-      border-radius: 24px;
-      border: 20px solid rgba(194, 0, 0, 0.52);
+    border-radius: 24px;
+    border: 20px solid rgba(194, 0, 0, 0.52);
 
-      h2 {
-        @include text-design(700, 35px, 36px);
-        width: 900px;
+    opacity: 0;
 
-        &:nth-child(1) {
-          left: 72px;
+    h2 {
+      @include text-design(700, 35px, 36px);
+      width: 900px;
 
-          color: white;
-        }
+      &:nth-child(1) {
+        left: 72px;
 
-        &:nth-child(2) {
-          color: rgba(255, 4, 4, 0.74);
-          padding-left: 75px;
-
-          margin-bottom: 160px;
-        }
+        color: white;
       }
 
-      button {
-        margin-left: 420px;
+      &:nth-child(2) {
+        color: rgba(255, 4, 4, 0.74);
+        padding-left: 75px;
+
+        margin-bottom: 160px;
       }
     }
 
-    &.off {
-      display: none;
+    button {
+      margin-left: 420px;
+    }
+
+    &:target {
+      opacity: 1;
     }
   }
 }

@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="modal-Contact-me off ">
+    <div class="modal-Contact-me" id="modal-Contact-me">
         <div>
             <h2>Personal information:</h2>
             <h2>Personal information:</h2>
@@ -28,10 +28,10 @@
         <div class="input-modal"><input type="text" placeholder="Surename"></div>
         <div class="input-modal"><input type="email" placeholder="E-mail"></div>
     
-        <button>Send</button>
+        <button><a href="#modal-Thanks">Send</a></button>
     </div>
 
-    <div class="modal-Thanks off">
+    <div class="modal-Thanks" id="modal-Thanks">
         <div>
             <h2>Thanks! <br> <br> I will definitely contact you</h2>
             <h2>Thanks! <br> <br> I will definitely contact you</h2>
@@ -78,20 +78,26 @@
                     </li>
                 </ul>
 
-                <button class="contact-btn">Contact me</button>
+                <button class="contact-btn"><a href="#modal-Contact-me">Contact me</a></button>
+                
             </div>
         </nav>
 
-        <div class="hero">
-
-            <img src="./img/hero-mobile.png" class="img-hero mobile" alt="">
-            <img src="./img/hero-desktop.png" class="img-hero desktop" alt="">
-
-            <p class="hero-quality">Fast and quality work</p>
-
-            <p class="hero-design">Any kind of work in the field of graphic and motion design</p>
-
-            <button class="contact-btn-mobile">Contact me</button>
+        <div class="container">
+            <div class="hero">
+            
+                <img src="./img/hero-mobile.png" class="img-hero mobile" alt="">
+                <img src="./img/hero-desktop (2).png" class="img-hero desktop" alt="">
+            
+                <img src="./img/graphic.png" class="graphic" alt="">
+                <img src="./img/design.png" class="design" alt="">
+            
+                <p class="hero-quality">Fast and quality work</p>
+            
+                <p class="hero-design">Any kind of work in the field of graphic and motion design</p>
+            
+                <button class="contact-btn-mobile"><a href="#modal-Contact-me">Contact me</a></button>
+            </div>
         </div>
     </header>
 
@@ -99,24 +105,25 @@
 
     <main>
 
+    <div class="container">
         <div class="my-task">
             <h2 class="black">My Task</h2>
             <h2 class="pink">My Task</h2>
-            
+        
             <img class="red-shape mobile" src="./img/redshape-mobile.png" alt="">
-            
+        
             <img class="dark-shape mobile" src="./img/darkshape-mobile.png" alt="">
-            
+        
             <img class="light-shape mobile" src="./img/lightshape-mobile.png" alt="">
-            
-            
+        
+        
             <img class="red-shape desktop" src="./img/redshape-desktop.png" alt="">
-            
+        
             <img class="dark-shape desktop" src="./img/darkshape-desktop.png" alt="">
-            
+        
             <img class="light-shape desktop" src="./img/lightshape-desktop.png" alt="">
-            
-            
+        
+        
             <div>
                 <div class="icon">
                     <div><img src="./img/heart1.png" alt=""></div>
@@ -129,6 +136,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
     </main>
 

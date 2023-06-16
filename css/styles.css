@@ -129,6 +129,13 @@ table {
   border-spacing: 0;
 }
 
+.container {
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
 header {
   background-image: url(../img/black-bg-mobile.png);
   background-repeat: no-repeat;
@@ -286,7 +293,6 @@ header nav .navigation .contact-btn {
 }
 header .hero {
   overflow: hidden;
-  position: relative;
   height: 648px;
   width: 100vw;
 }
@@ -298,6 +304,10 @@ header .hero .img-hero.mobile {
   top: 16%;
 }
 header .hero .img-hero.desktop {
+  display: none;
+}
+header .hero .graphic,
+header .hero .design {
   display: none;
 }
 header .hero .hero-quality {
@@ -348,6 +358,8 @@ header .hero .contact-btn-mobile:visited ~ .modal-Contact-me {
 
 main {
   background-image: url(../img/red-bg-mobile.png);
+}
+main .my-task {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -355,7 +367,7 @@ main {
   height: 822px;
   width: 100vw;
 }
-main h2 {
+main .my-task h2 {
   font-family: "Syncopate";
   font-style: normal;
   font-weight: 700;
@@ -364,41 +376,41 @@ main h2 {
   position: absolute;
   top: 3.5%;
 }
-main h2.black {
+main .my-task h2.black {
   left: 23.6%;
 }
-main h2.pink {
+main .my-task h2.pink {
   left: 22%;
   color: #f4bdbd;
 }
-main .red-shape.desktop {
+main .my-task .red-shape.desktop {
   display: none;
 }
-main .red-shape.mobile {
+main .my-task .red-shape.mobile {
   position: absolute;
   top: 5.6%;
   left: -2%;
 }
-main .dark-shape.desktop {
+main .my-task .dark-shape.desktop {
   display: none;
 }
-main .dark-shape.mobile {
+main .my-task .dark-shape.mobile {
   position: absolute;
   top: 29%;
 }
-main .light-shape.desktop {
+main .my-task .light-shape.desktop {
   display: none;
 }
-main .light-shape.mobile {
+main .my-task .light-shape.mobile {
   position: absolute;
   top: 49%;
   left: 8%;
 }
-main .icon {
+main .my-task .icon {
   display: none;
 }
 
-.modal-Contact-me.on {
+.modal-Contact-me {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -406,27 +418,28 @@ main .icon {
   height: 758px;
   background: linear-gradient(rgba(124, 0, 0, 0.52), rgba(124, 0, 0, 0.52)), url(../img/bg-modal-mobile.png);
   background-size: cover;
+  opacity: 0;
 }
-.modal-Contact-me.on h2 {
+.modal-Contact-me h2 {
   font-family: "Syncopate";
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
   line-height: 35px;
 }
-.modal-Contact-me.on h2:nth-child(1) {
+.modal-Contact-me h2:nth-child(1) {
   position: absolute;
   top: 65px;
   left: 25px;
   color: white;
 }
-.modal-Contact-me.on h2:nth-child(2) {
+.modal-Contact-me h2:nth-child(2) {
   color: #960000;
   padding-top: 65px;
   padding-left: 30px;
   margin-bottom: 53px;
 }
-.modal-Contact-me.on .input-modal {
+.modal-Contact-me .input-modal {
   box-sizing: border-box;
   width: 306px;
   height: 48px;
@@ -437,7 +450,7 @@ main .icon {
   justify-content: center;
   align-items: center;
 }
-.modal-Contact-me.on .input-modal input {
+.modal-Contact-me .input-modal input {
   box-sizing: border-box;
   width: 302px;
   height: 40px;
@@ -446,7 +459,7 @@ main .icon {
   border: 4px solid rgba(238, 5, 5, 0.13);
   border-radius: 15px;
 }
-.modal-Contact-me.on .input-modal input::placeholder {
+.modal-Contact-me .input-modal input::placeholder {
   color: #ff0000;
   font-family: "Roboto";
   font-style: normal;
@@ -454,7 +467,7 @@ main .icon {
   font-size: 14px;
   line-height: 16px;
 }
-.modal-Contact-me.on button {
+.modal-Contact-me button {
   background: #d80808;
   color: white;
   font-family: "Roboto";
@@ -468,19 +481,20 @@ main .icon {
   width: 194px;
   margin: 96px auto 0px;
 }
-.modal-Contact-me.off {
-  display: none;
+.modal-Contact-me:target {
+  opacity: 1;
 }
 
-.modal-Thanks.on {
+.modal-Thanks {
   background-color: rgba(115, 5, 5, 0.81);
   height: 758px;
   width: 100%;
   position: absolute;
   z-index: 2;
   display: block;
+  opacity: 0;
 }
-.modal-Thanks.on h2 {
+.modal-Thanks h2 {
   font-family: "Syncopate";
   font-style: normal;
   font-weight: 700;
@@ -490,17 +504,17 @@ main .icon {
   padding-top: 206px;
   text-align: center;
 }
-.modal-Thanks.on h2:nth-child(1) {
+.modal-Thanks h2:nth-child(1) {
   position: absolute;
   left: 25px;
   color: white;
 }
-.modal-Thanks.on h2:nth-child(2) {
+.modal-Thanks h2:nth-child(2) {
   color: rgba(255, 4, 4, 0.74);
   padding-left: 28px;
   margin-bottom: 160px;
 }
-.modal-Thanks.on button {
+.modal-Thanks button {
   box-sizing: content-box;
   background: #d80808;
   border-radius: 27px;
@@ -515,11 +529,16 @@ main .icon {
   font-size: 20px;
   line-height: 23px;
 }
-.modal-Thanks.off {
-  display: none;
+.modal-Thanks:target {
+  opacity: 1;
 }
 
 @media (min-width: 992px) {
+  .container {
+    max-width: 1295px;
+    height: fit-content;
+    margin: 0 auto;
+  }
   header {
     background-image: url(../img/black-bg-desktop.png);
   }
@@ -602,6 +621,19 @@ main .icon {
     right: 0;
     margin: 0 auto;
   }
+  header .hero .graphic,
+  header .hero .design {
+    display: block;
+    position: absolute;
+  }
+  header .hero .graphic {
+    top: 26%;
+    left: 6%;
+  }
+  header .hero .design {
+    top: 71%;
+    right: 4%;
+  }
   header .hero .hero-quality {
     font-family: "Roboto";
     font-style: normal;
@@ -626,9 +658,11 @@ main .icon {
   }
   main {
     background-image: url(../img/bg-red-desktop.png);
+  }
+  main .my-task {
     height: 945px;
   }
-  main h2 {
+  main .my-task h2 {
     font-family: "Syncopate";
     font-style: normal;
     font-weight: 700;
@@ -636,42 +670,42 @@ main .icon {
     line-height: 59px;
     top: 3%;
   }
-  main h2.black {
+  main .my-task h2.black {
     left: 6%;
   }
-  main h2.pink {
+  main .my-task h2.pink {
     left: 5.28%;
   }
-  main .red-shape,
-  main .dark-shape,
-  main .light-shape {
+  main .my-task .red-shape,
+  main .my-task .dark-shape,
+  main .my-task .light-shape {
     position: absolute;
   }
-  main .red-shape.desktop {
+  main .my-task .red-shape.desktop {
     display: block;
     left: 9%;
     top: 9%;
   }
-  main .red-shape.mobile {
+  main .my-task .red-shape.mobile {
     display: none;
   }
-  main .dark-shape.desktop {
+  main .my-task .dark-shape.desktop {
     display: block;
     left: 17%;
     top: 32%;
   }
-  main .dark-shape.mobile {
+  main .my-task .dark-shape.mobile {
     display: none;
   }
-  main .light-shape.desktop {
+  main .my-task .light-shape.desktop {
     display: block;
     left: 27%;
     top: 50%;
   }
-  main .light-shape.mobile {
+  main .my-task .light-shape.mobile {
     display: none;
   }
-  main .icon {
+  main .my-task .icon {
     position: absolute;
     box-sizing: border-box;
     border-radius: 50%;
@@ -680,13 +714,13 @@ main .icon {
     align-items: center;
     padding: 15px;
   }
-  main .icon div {
+  main .my-task .icon div {
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  main .icon:nth-of-type(1) {
+  main .my-task .icon:nth-of-type(1) {
     width: 187px;
     height: 185.07px;
     box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.2);
@@ -694,12 +728,12 @@ main .icon {
     top: 6%;
     left: 43%;
   }
-  main .icon:nth-of-type(1) div {
+  main .my-task .icon:nth-of-type(1) div {
     background: #e50000;
     width: 151px;
     height: 149.44px;
   }
-  main .icon:nth-of-type(2) {
+  main .my-task .icon:nth-of-type(2) {
     width: 225px;
     height: 223px;
     box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.23);
@@ -707,12 +741,12 @@ main .icon {
     top: 30%;
     left: 58%;
   }
-  main .icon:nth-of-type(2) div {
+  main .my-task .icon:nth-of-type(2) div {
     background: #713232;
     width: 192px;
     height: 190px;
   }
-  main .icon:nth-of-type(3) {
+  main .my-task .icon:nth-of-type(3) {
     width: 270px;
     height: 267px;
     box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.2);
@@ -720,12 +754,12 @@ main .icon {
     top: 56%;
     left: 70%;
   }
-  main .icon:nth-of-type(3) div {
+  main .my-task .icon:nth-of-type(3) div {
     background: #f0c9c9;
     width: 237px;
     height: 235px;
   }
-  .modal-Contact-me.on {
+  .modal-Contact-me {
     position: absolute;
     background: linear-gradient(rgba(129, 1, 1, 0.52), rgba(129, 1, 1, 0.52)), url(../img/bg-modal-desktop.png);
     width: 1046px;
@@ -737,35 +771,36 @@ main .icon {
     margin: auto auto;
     border-radius: 24px;
     border: 20px solid rgba(194, 0, 0, 0.52);
+    opacity: 0;
   }
-  .modal-Contact-me.on h2 {
+  .modal-Contact-me h2 {
     font-family: "Syncopate";
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
     line-height: 36px;
   }
-  .modal-Contact-me.on h2:nth-child(1) {
+  .modal-Contact-me h2:nth-child(1) {
     top: 50px;
     left: 47px;
   }
-  .modal-Contact-me.on h2:nth-child(2) {
+  .modal-Contact-me h2:nth-child(2) {
     color: rgba(45, 1, 1, 0.74);
     padding-top: 51px;
     padding-left: 53px;
     margin-bottom: 77px;
   }
-  .modal-Contact-me.on .input-modal {
+  .modal-Contact-me .input-modal {
     width: 945px;
     height: 83px;
     margin: 34px auto 0;
   }
-  .modal-Contact-me.on .input-modal input {
+  .modal-Contact-me .input-modal input {
     width: 934px;
     height: 63px;
     padding-left: 20px;
   }
-  .modal-Contact-me.on button {
+  .modal-Contact-me button {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
@@ -775,21 +810,22 @@ main .icon {
     height: 56px;
     margin: 57px auto 0px;
   }
-  .modal-Contact-me.off {
-    display: none;
+  .modal-Contact-me:target {
+    opacity: 1;
   }
-  .modal-Thanks.on {
+  .modal-Thanks {
     width: 1046px;
     height: 681px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto auto;
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 24px;
     border: 20px solid rgba(194, 0, 0, 0.52);
+    opacity: 0;
   }
-  .modal-Thanks.on h2 {
+  .modal-Thanks h2 {
     font-family: "Syncopate";
     font-style: normal;
     font-weight: 700;
@@ -797,19 +833,19 @@ main .icon {
     line-height: 36px;
     width: 900px;
   }
-  .modal-Thanks.on h2:nth-child(1) {
+  .modal-Thanks h2:nth-child(1) {
     left: 72px;
     color: white;
   }
-  .modal-Thanks.on h2:nth-child(2) {
+  .modal-Thanks h2:nth-child(2) {
     color: rgba(255, 4, 4, 0.74);
     padding-left: 75px;
     margin-bottom: 160px;
   }
-  .modal-Thanks.on button {
+  .modal-Thanks button {
     margin-left: 420px;
   }
-  .modal-Thanks.off {
-    display: none;
+  .modal-Thanks:target {
+    opacity: 1;
   }
 }
