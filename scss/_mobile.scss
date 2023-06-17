@@ -245,14 +245,14 @@ header {
       height: 43px;
 
       @include text-style(900, 14px, 16px);
-      color: white;
 
       position: absolute;
       top: 47%;
       left: 10.5%;
 
-      &:visited ~ .modal-Contact-me {
-        display: block;
+      a {
+        text-decoration: none;
+        color: white;
       }
     }
   }
@@ -260,15 +260,11 @@ header {
 
 main {
   background-image: url(../img/red-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .my-task {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-
     height: 822px;
-    width: 100vw;
 
     h2 {
       @include text-design(700, 32px, 33px);
@@ -395,7 +391,6 @@ main {
 
   button {
     background: #d80808;
-    color: white;
     @include text-style(900, 20px, 23px);
     border-radius: 27px;
     border: none;
@@ -404,6 +399,11 @@ main {
     width: 194px;
 
     margin: 96px auto 0px;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 
   &:target {
@@ -458,8 +458,12 @@ main {
 
     margin-left: 82px;
 
-    color: white;
     @include text-style(900, 20px, 23px);
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 
   &:target {

@@ -347,25 +347,22 @@ header .hero .contact-btn-mobile {
   font-weight: 900;
   font-size: 14px;
   line-height: 16px;
-  color: white;
   position: absolute;
   top: 47%;
   left: 10.5%;
 }
-header .hero .contact-btn-mobile:visited ~ .modal-Contact-me {
-  display: block;
+header .hero .contact-btn-mobile a {
+  text-decoration: none;
+  color: white;
 }
 
 main {
   background-image: url(../img/red-bg-mobile.png);
-}
-main .my-task {
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
+}
+main .my-task {
   height: 822px;
-  width: 100vw;
 }
 main .my-task h2 {
   font-family: "Syncopate";
@@ -469,7 +466,6 @@ main .my-task .icon {
 }
 .modal-Contact-me button {
   background: #d80808;
-  color: white;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -480,6 +476,10 @@ main .my-task .icon {
   height: 54px;
   width: 194px;
   margin: 96px auto 0px;
+}
+.modal-Contact-me button a {
+  text-decoration: none;
+  color: white;
 }
 .modal-Contact-me:target {
   opacity: 1;
@@ -522,12 +522,15 @@ main .my-task .icon {
   width: 194px;
   height: 54px;
   margin-left: 82px;
-  color: white;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
   line-height: 23px;
+}
+.modal-Thanks button a {
+  text-decoration: none;
+  color: white;
 }
 .modal-Thanks:target {
   opacity: 1;
@@ -599,7 +602,6 @@ main .my-task .icon {
   header nav .navigation .contact-btn {
     display: inline-block;
     background: #d80808;
-    color: white;
     border-radius: 27px;
     border: none;
     padding: 13px 22px;
@@ -608,6 +610,10 @@ main .my-task .icon {
     font-weight: 900;
     font-size: 19px;
     line-height: 22px;
+  }
+  header nav .navigation .contact-btn a {
+    text-decoration: none;
+    color: white;
   }
   header .hero {
     height: 1004px;

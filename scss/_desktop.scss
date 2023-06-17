@@ -84,12 +84,16 @@
         .contact-btn {
           display: inline-block;
           background: #d80808;
-          color: white;
           border-radius: 27px;
           border: none;
           padding: 13px 22px;
 
           @include text-style(900, 19px, 22px);
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
         }
       }
     }
