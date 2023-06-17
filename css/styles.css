@@ -535,7 +535,7 @@ main .my-task .icon {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 1295px;
+    max-width: 90%;
     height: fit-content;
     margin: 0 auto;
   }
@@ -610,16 +610,15 @@ main .my-task .icon {
     line-height: 22px;
   }
   header .hero {
-    height: 1090px;
+    height: 1004px;
   }
   header .hero .img-hero.mobile {
     display: none;
   }
   header .hero .img-hero.desktop {
     display: block;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    left: 21%;
+    top: 0%;
   }
   header .hero .graphic,
   header .hero .design {
@@ -627,11 +626,11 @@ main .my-task .icon {
     position: absolute;
   }
   header .hero .graphic {
-    top: 26%;
+    top: 19%;
     left: 6%;
   }
   header .hero .design {
-    top: 71%;
+    top: 69%;
     right: 4%;
   }
   header .hero .hero-quality {
@@ -640,7 +639,7 @@ main .my-task .icon {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    top: 26%;
+    top: 17%;
     left: 76%;
   }
   header .hero .hero-design {
@@ -650,7 +649,7 @@ main .my-task .icon {
     font-size: 18px;
     line-height: 26px;
     width: 303px;
-    top: 79%;
+    top: 77%;
     left: 7%;
   }
   header .hero .contact-btn-mobile {
